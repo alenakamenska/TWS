@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #469d89;
-    --secondary-color: #88d4ab;
-    --background-color: #f0f4f7;
-    --accent-color: #88d4ab;
-    --footer-bg: #469d89;
-    --button-bg: #469d89;
+    --primary-color: #036666;
+    --secondary-color: #56ab91;
+    --background-color: #036666;
+    --accent-color: #f0f4f7;
+    --footer-bg: #036666;
+    --button-bg: #036666;
     --button-hover-bg: #2e6b31;
-    --table-header-bg: #469d89;
+    --table-header-bg: #036666;
     --table-row-even-bg: #f2f2f2;
     --input-border-color: #ccc;
     --box-shadow-color: rgba(0, 0, 0, 0.1);
@@ -21,11 +21,15 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-image: url('../img/pozadi.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
+    color: var(--accent-color);
 }
 
 header {
@@ -133,8 +137,9 @@ footer {
 .img {
     object-fit: cover;
     height: 200px;
-    width: 100%;
+    width: 80%;
     display: block;
+    margin: 0.5em auto;
 }
 
 .box {
@@ -142,10 +147,10 @@ footer {
     color: black;
     text-align: center;
     width: 100%;
-    max-width: 300px;
-    height: 20em;
+    max-width: 500px;
+    height: 22em;
     font-size: 18px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin-top: 2em;
     box-shadow: 0px 5px 15px var(--box-shadow-color);
     overflow: hidden;
@@ -187,6 +192,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    color: black;
 }
 
 th {
@@ -209,12 +215,13 @@ fieldset {
     border: 2px solid var(--primary-color);
     padding: 50px;
     width: 100%;
+    background-color: var(--accent-color);
 }
 
 legend {
     font-weight: bold;
     font-size: 1.2em;
-    color: #2e6b31;
+    color: var(--background-color);
 }
 
 label {
@@ -322,7 +329,7 @@ input, select {
 
 .text ul > li {
     font-weight: bold;
-    color: #fff;
+    color: black;
     background: var(--accent-color);
     padding: 10px 13px;
     border-radius: 8px;
@@ -353,6 +360,7 @@ input, select {
     border-radius: 6px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.08);
 }
+
 
 
 @media (max-width: 1024px) {
