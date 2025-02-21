@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #036666;
-    --secondary-color: #56ab91;
+    --primary-color: #469d89;
+    --secondary-color: #88d4ab;
     --background-color: #f0f4f7;
-    --accent-color: #56ab91;
-    --footer-bg: #036666;
-    --button-bg: #036666;
+    --accent-color: #88d4ab;
+    --footer-bg: #469d89;
+    --button-bg: #469d89;
     --button-hover-bg: #2e6b31;
-    --table-header-bg: #036666;
+    --table-header-bg: #469d89;
     --table-row-even-bg: #f2f2f2;
     --input-border-color: #ccc;
     --box-shadow-color: rgba(0, 0, 0, 0.1);
