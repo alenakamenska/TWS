@@ -206,15 +206,30 @@ tr:nth-child(even) {
 
 .calculation {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 20px; /* Mezera mezi formulářem a výsledkem */
+    align-items: flex-start; /* Zarovnání nahoře */
+}
+
+.form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px var(--box-shadow-color);
+    flex: 1;
+}
+
+.vizualization {
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px var(--box-shadow-color);
+    flex: 1; 
 }
 
 fieldset {
     border: 2px solid var(--primary-color);
-    padding: 50px;
-    width: 100%;
+    padding: 40px;
+    width: 80%;
     background-color: var(--accent-color);
 }
 
@@ -227,6 +242,7 @@ legend {
 label {
     display: block;
     margin-top: 10px;
+    color: black;
 }
 
 input, select {
@@ -392,7 +408,7 @@ input, select {
     }
 
     .hero img {
-        max-width: 120px;
+        display: none;
     }
 
     table {
@@ -412,7 +428,7 @@ input, select {
     }
 
     .hero h1 {
-        font-size: 2em;
+        display: none;
     }
 
     .hero img {
