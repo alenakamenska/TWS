@@ -5,6 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const vysledek = document.getElementById("vysledek");
     const sklizen = document.getElementById("sklizen");
 
+    const zasazenoValue = document.getElementById("zasazenoValue");
+    const sklizenoValue = document.getElementById("sklizenoValue");
+
+    zasazenoValue.innerText = zasazenoInput.value;
+    sklizenoValue.innerText = sklizenoInput.value;
+
+    zasazenoInput.addEventListener("input", function () {
+        zasazenoValue.innerText = this.value;
+    });
+
+    sklizenoInput.addEventListener("input", function () {
+        sklizenoValue.innerText = this.value;
+    });
+
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 

@@ -206,8 +206,8 @@ tr:nth-child(even) {
 
 .calculation {
     display: flex;
-    gap: 20px; /* Mezera mezi formulářem a výsledkem */
-    align-items: flex-start; /* Zarovnání nahoře */
+    gap: 20px; 
+    align-items: flex-start; 
 }
 
 .form {
@@ -231,6 +231,7 @@ fieldset {
     padding: 40px;
     width: 80%;
     background-color: var(--accent-color);
+    color: var(--background-color);
 }
 
 legend {
@@ -376,8 +377,6 @@ input, select {
     border-radius: 6px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.08);
 }
-
-
 
 @media (max-width: 1024px) {
     .container {

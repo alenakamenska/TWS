@@ -130,16 +130,19 @@
                     <fieldset>
                         <legend>Výpočet úrodnosti</legend>
                         <label for="typ">Typ rostliny:</label>
-                        <select id="typ" name="typ">
+                        <select id="typ" name="typ" required>
+                            <option value="">Vyberte typ rostliny</option>
                             <option value="rajčata">Rajčata</option>
                             <option value="papriky">Papriky</option>
                             <option value="okurky">Okurky</option>
                             <option value="jahody">Jahody</option>
                         </select>
                         <label for="zasazeno">Zasazeno semínek:</label>
-                        <input type="number" id="zasazeno" name="zasazeno" min="0" required>
+                        <input type="range" id="zasazeno" name="zasazeno" min="0" max="100" step="1" value="0">
+                        <span id="zasazenoValue">0</span>
                         <label for="sklizeno">Sklizeno plodů:</label>
-                        <input type="number" id="sklizeno" name="sklizeno" min="0" required>
+                        <input type="range" id="sklizeno" name="sklizeno" min="0" max="200" step="1" value="0">
+                        <span id="sklizenoValue">0</span>
                         <button type="submit" class="btn-form">Zjistit</button>
                     </fieldset>
                 </form>
