@@ -422,6 +422,14 @@ ol > li {
     padding: 8px 12px;
 }
 
+figcaption {
+    padding: 5px 10px; /* Vnitřní odsazení */
+    border-radius: 5px; /* Zakulacené rohy */
+    display: inline-block; /* Šířka podle obsahu */
+    font-style: italic; /* Kurzíva */
+}
+
+
 @media (max-width: 1024px) {
     .container {
         padding-left: 10%;
