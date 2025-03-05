@@ -281,6 +281,7 @@ input, select {
 .vizualization {
     flex-grow: 1;
     text-align: center;
+    color: var(--background-color);
 }
 
 .plant {
