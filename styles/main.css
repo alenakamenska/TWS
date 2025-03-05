@@ -23,7 +23,7 @@
 }
 
 body {
-    background-image: url('../img/pozadi.jpg');
+    background-image: url('../img/pozadi.webp');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -416,6 +416,7 @@ ol > li {
     gap: 8px;
     padding: 10px 0 0;
     justify-content: center;
+    flex-direction: column;
 }
 
  ol ol li {

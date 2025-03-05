@@ -50,7 +50,7 @@
                 <li>Vyberte semínka nebo sazenice.
                     <ol>
                         <li>Zvolte rostliny, které odpovídají ročnímu období.</li>
-                        <li>Prozkoumejte podmínky pěstování pro každý druh.</li>
+                        <li>Najděte podmínky pěstování pro každý druh.</li>
                     </ol>
                 </li>
                 <li>Zasaďte semínka nebo sazenice.
@@ -148,8 +148,30 @@
                 </form>
             </div>
             <div class="vizualization">
-                <p class="result" id="vysledek"></p>
-                <progress max="100" id="sklizen"></progress> 
+                <p class="result" id="vysledek">Zadejte hodnoty do formuláře</p>
+                <svg width="200" height="410" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Květina -->
+                    <g class="flower">
+                        <rect x="95" y="140" width="10" height="200" fill="green"/>
+                        <circle cx="100" cy="100" r="40" fill="yellow" stroke="orange" stroke-width="5"/>
+                        <circle cx="60" cy="60" r="20" fill="pink"/>
+                        <circle cx="140" cy="60" r="20" fill="pink"/>
+                        <circle cx="60" cy="140" r="20" fill="pink"/>
+                        <circle cx="140" cy="140" r="20" fill="pink"/>
+                        <circle cx="100" cy="160" r="20" fill="pink"/>
+                        <circle cx="160" cy="100" r="20" fill="pink"/>
+                        <circle cx="100" cy="40" r="20" fill="pink"/>
+                        <circle cx="40" cy="100" r="20" fill="pink"/>
+                        
+                    </g>
+                    <g class="face">
+                        <circle cx="85" cy="90" r="5" fill="black"/>
+                        <circle cx="115" cy="90" r="5" fill="black"/>
+                        <path class="smile" d="M80,110 Q100,130 120,110" stroke="black" stroke-width="4" fill="none"/>
+                        <path class="frown" d="M80,120 Q100,100 120,120" stroke="black" stroke-width="4" fill="none"/>
+                    </g>
+                </svg>
+                
             </div>
         </div>
     </div>
