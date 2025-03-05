@@ -270,6 +270,7 @@ input, select {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 10px;
 }
 
 .btn-form:hover {
@@ -423,10 +424,10 @@ ol > li {
 }
 
 figcaption {
-    padding: 5px 10px; /* Vnitřní odsazení */
-    border-radius: 5px; /* Zakulacené rohy */
-    display: inline-block; /* Šířka podle obsahu */
-    font-style: italic; /* Kurzíva */
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    font-style: italic; 
 }
 
 
