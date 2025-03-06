@@ -141,7 +141,7 @@
                         <input type="range" id="zasazeno" name="zasazeno" min="0" max="100" step="1" value="0">
                         <span id="zasazenoValue">0</span>
                         <label for="sklizeno">Sklizeno plodů:</label>
-                        <input type="range" id="sklizeno" name="sklizeno" min="0" max="200" step="1" value="0">
+                        <input type="range" id="sklizeno" name="sklizeno" min="0" max="100" step="1" value="0">
                         <span id="sklizenoValue">0</span>
                         <button type="submit" class="btn-form">Zjistit</button>
                     </fieldset>
@@ -153,6 +153,8 @@
                     <!-- Květina -->
                     <g class="flower">
                         <rect x="95" y="140" width="10" height="200" fill="green"/>
+                        <ellipse cx="80" cy="200" rx="20" ry="10" fill="green"/>
+                        <ellipse cx="120" cy="200" rx="20" ry="10" fill="green"/>
                         <circle cx="100" cy="100" r="40" fill="yellow" stroke="orange" stroke-width="5"/>
                         <circle cx="60" cy="60" r="20" fill="pink"/>
                         <circle cx="140" cy="60" r="20" fill="pink"/>
@@ -162,22 +164,23 @@
                         <circle cx="160" cy="100" r="20" fill="pink"/>
                         <circle cx="100" cy="40" r="20" fill="pink"/>
                         <circle cx="40" cy="100" r="20" fill="pink"/>
-                        
+                        <ellipse cx="10" cy="20" r="20" fill="green"/>
                     </g>
+                   <!-- Obličej -->
                     <g class="face">
                         <circle cx="85" cy="90" r="5" fill="black"/>
                         <circle cx="115" cy="90" r="5" fill="black"/>
                         <path class="smile" d="M80,110 Q100,130 120,110" stroke="black" stroke-width="4" fill="none"/>
-                        <path class="frown" d="M80,120 Q100,100 120,120" stroke="black" stroke-width="4" fill="none"/>
+                        <path class="frown" d="M80,120 Q100,100 120,120" stroke="black" stroke-width="4" fill="none" style="display: none;"/>
                     </g>
-                </svg>
-                
+                </svg>          
             </div>
         </div>
     </div>
     <footer>
-        <a>&copy; 2025 Rostlinný web | Kontakt: info@rostliny.cz</a>
-        <a class="href" href="https://achecks.org/achecker#wcag21aa-desktop,https://alenakamenska.github.io/TWS/pestovani.html">WCAG desktop</a>
-    </footer>
+        <p>&copy; 2025 Rostlinný web </p>
+        <p><a class="href" href="https://achecks.org/achecker#wcag21aa-desktop,https://alenakamenska.github.io/TWS/pestovani.html">
+            WCAG desktop</a></p>
+    </footer>    
 </body>
 </html>

@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const zasazenoValue = document.getElementById("zasazenoValue");
     const sklizenoValue = document.getElementById("sklizenoValue");
+    
+    const smile = document.querySelector(".smile");
+    const frown = document.querySelector(".frown");
 
     zasazenoValue.innerText = zasazenoInput.value;
     sklizenoValue.innerText = sklizenoInput.value;
@@ -28,17 +31,33 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isNaN(zasazeno) || isNaN(sklizeno) || zasazeno <= 0) {
             vysledek.textContent = "Neplatný vstup!";
             vysledek.style.color = "red";
+            updateFlowerExpression(false);
         } else if (sklizeno > zasazeno) {
             vysledek.textContent = "Nelze sklidit více, než je zasazeno!";
             vysledek.style.color = "red";
+            updateFlowerExpression(false);
         } else if (zasazeno <= 0 || sklizeno < 0) {
             vysledek.textContent = "Hodnoty nemůžou být záporné.";
             vysledek.style.color = "red";
+            updateFlowerExpression(false);
         } else {
             let urodnost = (sklizeno / zasazeno) * 100;
+            updateFlowerExpression(urodnost > 50);
             vysledek.textContent = `Úrodnost: ${urodnost.toFixed(2)} %`;
             vysledek.style.color = "#2e6b31";
             sklizen.value = urodnost;
         }
     });
+
+    function updateFlowerExpression(isHappy) {
+        if (isHappy) {
+            smile.style.display = "block";
+            frown.style.display = "none";
+        } else {
+            smile.style.display = "none";
+            frown.style.display = "block";
+        }
+    }
+
+    updateFlowerExpression(true);
 });

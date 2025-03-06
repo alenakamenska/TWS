@@ -123,6 +123,11 @@ footer {
     width: 100%;
 }
 
+.href{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 .body {
     display: flex;
     justify-content: center;
@@ -432,12 +437,6 @@ figcaption {
     display: inline-block; 
     font-style: italic; 
 }
-
-.href{
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
 
 @media (max-width: 1024px) {
     .container {
