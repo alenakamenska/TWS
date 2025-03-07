@@ -213,8 +213,10 @@ tr:nth-child(even) {
 
 .calculation {
     display: flex;
-    gap: 20px; 
-    align-items: flex-start; 
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .form {
@@ -223,7 +225,7 @@ tr:nth-child(even) {
     padding: 5%;
     box-shadow: 0px 5px 15px var(--box-shadow-color);
     flex: 1;
-    width: 90%;
+    width: 100%;
     max-width: 400px; 
     display: flex;
     justify-content: center;
@@ -235,7 +237,10 @@ tr:nth-child(even) {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 15px var(--box-shadow-color);
-    flex: 1; 
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    color: var(--background-color);
 }
 
 fieldset {
@@ -282,13 +287,6 @@ input, select {
 .btn-form:hover {
     background-color: var(--button-hover-bg);
 }
-
-.vizualization {
-    flex-grow: 1;
-    text-align: center;
-    color: var(--background-color);
-}
-
 .plant {
     position: fixed;
     top: 0;
@@ -438,6 +436,7 @@ figcaption {
     font-style: italic; 
 }
 
+/* Pro šířky obrazovek do 1024px */
 @media (max-width: 1024px) {
     .container {
         padding-left: 10%;
@@ -445,7 +444,7 @@ figcaption {
     }
 
     .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .box {
@@ -477,17 +476,25 @@ figcaption {
 
     .calculation {
         flex-direction: column;
+        align-items: center; 
+    }
+
+    .form,
+    .vizualization {
+        width: 100%;
+        max-width: 90%; 
     }
 }
 
+/* Pro šířky obrazovek do 768px */
 @media (max-width: 768px) {
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
         gap: 1.5em;
     }
 
     .hero h1 {
-        display: none;
+        display: none; 
     }
 
     .hero img {
@@ -515,8 +522,19 @@ figcaption {
     .text ul > li {
         font-size: 0.9em;
     }
+    .calculation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form,
+    .vizualization {
+        width: 100%;
+        max-width: 90%; 
+    }
 }
 
+/* Pro šířky obrazovek do 480px */
 @media (max-width: 480px) {
     .container {
         padding-left: 5%;
@@ -556,5 +574,17 @@ figcaption {
     .plant {
         width: 20%;
         top: 10%;
+    }
+
+    .calculation {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; 
+    }
+
+    .form,
+    .vizualization {
+        width: 100%;
+        max-width: 100%;
     }
 }
