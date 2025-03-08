@@ -173,6 +173,10 @@ figure {
     margin: 0;
 }
 
+.video{
+    width: 100%;
+}
+
 .btn-read {
     border-radius: 5px;
     background-color: #edeec9;
