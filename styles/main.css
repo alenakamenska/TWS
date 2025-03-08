@@ -3,12 +3,8 @@
 :root {
     --primary-color: #036666;
     --secondary-color: #56ab91;
-    --background-color: #036666;
     --accent-color: #f0f4f7;
-    --footer-bg: #036666;
-    --button-bg: #036666;
     --button-hover-bg: #2e6b31;
-    --table-header-bg: #036666;
     --table-row-even-bg: #f2f2f2;
     --input-border-color: #ccc;
     --box-shadow-color: rgba(0, 0, 0, 0.1);
@@ -115,7 +111,7 @@ main {
 }
 
 footer {
-    background: var(--background-color);
+    background: var(--primary-color);
     color: var(--accent-color);
     text-align: center;
     padding: 20px;
@@ -144,7 +140,6 @@ footer {
     text-decoration: underline;
 }
 
-
 .body {
     display: flex;
     justify-content: center;
@@ -153,10 +148,9 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
     padding: 2em;
-    flex-wrap: wrap;
 }
 
 .img {
@@ -214,7 +208,7 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: white;
+    background-color: var(--accent-color);
 }
 
 th, td {
@@ -226,7 +220,7 @@ th, td {
 
 th {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
 }
 
 tr:nth-child(even) {
@@ -242,7 +236,7 @@ tr:nth-child(even) {
 }
 
 .form {
-    background-color: white;
+    background-color: var(--accent-color);
     border-radius: 10px;
     padding: 5%;
     box-shadow: 0px 5px 15px var(--box-shadow-color);
@@ -255,14 +249,14 @@ tr:nth-child(even) {
 }
 
 .vizualization {
-    background-color: white;
+    background-color: var(--accent-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 15px var(--box-shadow-color);
     flex: 1;
     width: 100%;
     text-align: center;
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 fieldset {
@@ -270,14 +264,14 @@ fieldset {
     padding: 40px;
     width: 100%;
     background-color: var(--accent-color);
-    color: var(--background-color);
+    color: var(--primary-color);
     box-sizing: border-box;
 }
 
 legend {
     font-weight: bold;
     font-size: 1.2em;
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 label {
@@ -299,7 +293,7 @@ input, select {
     margin-top: 15px;
     padding: 10px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
     border: none;
     cursor: pointer;
     width: 100%;
@@ -350,15 +344,6 @@ input, select {
 .plant img {
     width: 100%;
     animation: sway 4s infinite ease-in-out;
-}
-
-.tree {
-    position: fixed;
-    bottom: 0;
-    width: 10%;
-    height: auto;
-    transition: transform 0.5s ease-out;
-    transform-origin: bottom;
 }
 
 .text {
@@ -482,10 +467,6 @@ figcaption {
         padding-right: 10%;
     }
 
-    .grid {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
     .box {
         max-width: 250px;
         height: auto;
@@ -527,11 +508,6 @@ figcaption {
 
 /* Pro šířky obrazovek do 768px */
 @media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr; 
-        gap: 1.5em;
-    }
-
     .hero h1 {
         display: none; 
     }
@@ -577,6 +553,10 @@ figcaption {
         overflow-x: auto; 
         white-space: nowrap; 
     }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Pro šířky obrazovek do 480px */
@@ -588,10 +568,6 @@ figcaption {
 
     .hero h1 {
         font-size: 1.5em;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
     }
 
     .box {
