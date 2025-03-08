@@ -115,19 +115,35 @@ main {
 }
 
 footer {
-    background-color: var(--footer-bg);
-    color: white;
+    background: var(--background-color);
+    color: var(--accent-color);
     text-align: center;
-    padding: 10px;
-    margin-top: auto;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 20px;
 }
 
-.href{
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin-top: 10px;
+}
+
+.hrefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hrefs a {
     color: var(--accent-color);
     text-decoration: none;
+    margin: 5px 0;
 }
+
+.hrefs a:hover {
+    text-decoration: underline;
+}
+
 
 .body {
     display: flex;
