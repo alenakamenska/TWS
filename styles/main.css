@@ -508,6 +508,12 @@ figcaption {
 
 /* Pro šířky obrazovek do 768px */
 @media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2em;
+        padding: 2em;
+    }
     .hero h1 {
         display: none; 
     }
