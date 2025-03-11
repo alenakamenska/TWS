@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById("btn-mode");
     const body = document.body;
+    const vysledek = document.getElementById("vysledek");
     if (localStorage.getItem("dark-mode") === "enabled") {
         body.classList.add("dark-mode");
         btn.textContent = "☀️ Light Mode";

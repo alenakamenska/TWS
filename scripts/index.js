@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let urodnost = (sklizeno / zasazeno) * 100;
             updateFlowerExpression(urodnost > 50);
             vysledek.textContent = `Úrodnost: ${urodnost.toFixed(2)} %`;
-            vysledek.style.color = "#2e6b31";
+            vysledek.style.color = "";
             sklizen.value = urodnost;
         }
     });
