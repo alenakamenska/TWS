@@ -460,6 +460,22 @@ figcaption {
     font-style: italic; 
 }
 
+.btn-mode{
+    border-radius: 5px;
+    background-color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.btn-mode:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px var(--box-shadow-color);
+}
+
 /* Pro šířky obrazovek do 1024px */
 @media (max-width: 1024px) {
     .container {
@@ -479,6 +495,10 @@ figcaption {
     nav ul li a {
         padding: 10px 0;
         font-size: 1em;
+    }
+
+    .hero{
+        flex-direction: column;
     }
 
     .hero h1 {

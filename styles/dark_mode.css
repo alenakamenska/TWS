@@ -91,3 +91,13 @@ input, select {
     border-radius: 5px;
 }
 
+.dark-mode .btn-mode{
+    background-color: var(--accent-color);
+    color: var(--table-row-even-bg);
+}
+
+.dark-mode .btn-mode:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 2px 5px var(--accent-color);
+}
+
