@@ -20,9 +20,9 @@
 
 body {
     background-image: url('../img/pozadi.webp');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -120,7 +120,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
@@ -183,7 +183,7 @@ figure {
     margin: 0;
 }
 
-.video{
+.video {
     width: 100%;
 }
 
@@ -211,7 +211,8 @@ table {
     background-color: var(--accent-color);
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
@@ -231,8 +232,8 @@ tr:nth-child(even) {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .form {
@@ -242,7 +243,7 @@ tr:nth-child(even) {
     box-shadow: 0px 5px 15px var(--box-shadow-color);
     flex: 1;
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +281,8 @@ label {
     color: black;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 5px;
     margin-top: 5px;
@@ -303,6 +305,7 @@ input, select {
 .btn-form:hover {
     background-color: var(--button-hover-bg);
 }
+
 .plant {
     position: fixed;
     top: 0;
@@ -319,20 +322,43 @@ input, select {
 }
 
 @keyframes sway {
-    0% { transform: translateY(0px) rotate(-2deg); }
-    50% { transform: translateY(5px) rotate(2deg); }
-    100% { transform: translateY(0px) rotate(-2deg); }
+    0% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(-2deg);
+    }
 }
+
 @keyframes wawe {
-    0% { transform: rotateX(0deg); }
-    25% { transform: rotateX(15deg); }
-    50% { transform: rotateX(0deg); }
-    75% { transform: rotateX(-15deg); }
-    100% { transform: rotateX(0deg); } 
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    25% {
+        transform: rotateX(15deg);
+    }
+
+    50% {
+        transform: rotateX(0deg);
+    }
+
+    75% {
+        transform: rotateX(-15deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
 }
 
 .flower .leaf {
-    transform-origin: center center; 
+    transform-origin: center center;
     animation: wawe 1s infinite ease-in-out;
 }
 
@@ -355,7 +381,7 @@ input, select {
     margin: 30px auto;
 }
 
-.text > div {
+.text>div {
     font-size: 1.1em;
     line-height: 1.6;
     color: #333;
@@ -368,7 +394,7 @@ input, select {
     transition: all 0.3s ease-in-out;
 }
 
-.text > div:hover {
+.text>div:hover {
     background: #eef7ee;
     transform: scale(1.02);
 }
@@ -381,7 +407,7 @@ input, select {
     gap: 10px;
 }
 
-.text ul > li {
+.text ul>li {
     font-weight: bold;
     color: black;
     background: var(--accent-color);
@@ -393,7 +419,7 @@ input, select {
     text-align: center;
 }
 
-.text ul > li:hover {
+.text ul>li:hover {
     background: #98c9a3;
     transform: scale(1.02);
 }
@@ -415,15 +441,16 @@ input, select {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.08);
 }
 
- ol {
+ol {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;;
+    gap: 10px;
+    ;
     list-style-position: inside;
 }
 
-ol > li {
+ol>li {
     font-weight: bold;
     color: black;
     background: var(--accent-color);
@@ -434,12 +461,12 @@ ol > li {
     text-align: center;
 }
 
- ol > li:hover {
+ol>li:hover {
     background: #98c9a3;
     transform: scale(1.02);
 }
 
- ol ol {
+ol ol {
     display: block;
     gap: 8px;
     padding: 10px 0 0;
@@ -447,20 +474,20 @@ ol > li {
     flex-direction: column;
 }
 
- ol ol li {
+ol ol li {
     font-weight: normal;
     color: #333;
     padding: 8px 12px;
 }
 
 figcaption {
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    display: inline-block; 
-    font-style: italic; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-style: italic;
 }
 
-.btn-mode{
+.btn-mode {
     border-radius: 5px;
     background-color: black;
     padding: 12px 24px;
@@ -471,7 +498,7 @@ figcaption {
     text-decoration: none;
 }
 
-.btn-mode:hover{
+.btn-mode:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 10px var(--box-shadow-color);
 }
@@ -497,7 +524,7 @@ figcaption {
         font-size: 1em;
     }
 
-    .hero{
+    .hero {
         flex-direction: column;
     }
 
@@ -516,13 +543,13 @@ figcaption {
 
     .calculation {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .form,
     .vizualization {
         width: 100%;
-        max-width: 90%; 
+        max-width: 90%;
     }
 }
 
@@ -534,8 +561,9 @@ figcaption {
         gap: 2em;
         padding: 2em;
     }
+
     .hero h1 {
-        display: none; 
+        display: none;
     }
 
     .hero img {
@@ -560,9 +588,10 @@ figcaption {
         width: 100%;
     }
 
-    .text ul > li {
+    .text ul>li {
         font-size: 0.9em;
     }
+
     .calculation {
         flex-direction: column;
         align-items: center;
@@ -571,14 +600,16 @@ figcaption {
     .form,
     .vizualization {
         width: 100%;
-        max-width: 90%; 
+        max-width: 90%;
     }
+
     table {
         width: 100%;
-        display: block; 
-        overflow-x: auto; 
-        white-space: nowrap; 
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -614,7 +645,7 @@ figcaption {
         width: 100%;
     }
 
-    .text ul > li {
+    .text ul>li {
         font-size: 1em;
     }
 

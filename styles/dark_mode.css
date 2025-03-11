@@ -17,6 +17,11 @@
     color: var(--accent-color);
 }
 
+.dark-mode footer {
+    background-color: var(--table-row-even-bg);
+    color: var(--accent-color);
+}
+
 .dark-mode nav ul li a {
     color: var(--accent-color);
 }
@@ -25,7 +30,7 @@
     background-color: var(--table-row-even-bg);
 }
 
-.dark-mode h1{
+.dark-mode h1 {
     color: var(--accent-color);
 }
 
@@ -47,22 +52,23 @@
     background-color: var(--table-row-even-bg);
     color: var(--accent-color);
 }
+
 .dark-mode th,
-.dark-mode td{
+.dark-mode td {
     color: var(--accent-color);
 }
 
-.dark-mode .text ol li{
+.dark-mode .text ol li {
     background-color: var(--input-border-color);
-    color:var(--accent-color)
+    color: var(--accent-color)
 }
 
-.dark-mode .text ul li{
+.dark-mode .text ul li {
     background-color: var(--input-border-color);
-    color:var(--accent-color)
+    color: var(--accent-color)
 }
 
-.dark-mode .text > div{
+.dark-mode .text>div {
     background-color: var(--input-border-color);
     color: var(--accent-color);
 }
@@ -83,21 +89,12 @@ legend {
     color: var(--accent-color);
 }
 
-input, select {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    border: 1px solid var(--input-border-color);
-    border-radius: 5px;
-}
-
-.dark-mode .btn-mode{
+.dark-mode .btn-mode {
     background-color: var(--accent-color);
     color: var(--table-row-even-bg);
 }
 
-.dark-mode .btn-mode:hover{
+.dark-mode .btn-mode:hover {
     transform: scale(1.05);
-    box-shadow: 5px 2px 5px var(--accent-color);
+    box-shadow: 5px 5px 10px var(--box-shadow-color);
 }
-
